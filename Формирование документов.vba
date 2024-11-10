@@ -79,7 +79,7 @@ End Function
 
 'Вывод сообщения о том, что документы сегодня уже формировались
 Function NewFolderName() As String
-    NewFolderName = Replace(ThisWorkbook.FullName, ThisWorkbook.Name, "Акты " & Get_Date)
+    NewFolderName = Replace(ThisWorkbook.FullName, ThisWorkbook.Name, "Документы " & Get_Date)
     If NewFolderExists(NewFolderName) Then
     MsgBox "Документы сегодня уже формировались!", vbCritical: End
     Else
