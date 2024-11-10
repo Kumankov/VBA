@@ -38,7 +38,7 @@ Sub СформироватьДокументы()
             DocWord.SaveAs Filename: DocWord.Close False: DoEvents
            
  
-                            ' Открытие актов и удаление лишних строк и смволов
+                            ' Открытие документов и удаление лишних строк и смволов
                             Dim AppWord1
                             Set AppWord1 = CreateObject("Word.Application")
                             AppWord1.Visible = False
